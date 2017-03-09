@@ -1,0 +1,235 @@
+
+html{
+	font-size:16px;
+}
+
+/*layout mobile phone larger than 400px wide */
+
+body {
+	width:auto;
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+header,
+.top-section,
+.bottom-section,
+footer
+ {
+	width:95%;
+	margin:auto;
+	float:left;
+}
+footer{
+	clear:both;
+}
+/***** header *****/
+
+header h1, span{
+	text-transform:uppercase;
+	text-align: center;
+	padding: 0.9rem;
+	border-bottom: 0.1875rem solid #77a466;
+}
+ header span{
+	 color: #77a466;
+ }
+
+ header nav a {
+	display: block;
+	text-align: center;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ 	font-size: 0.875rem;
+ 	padding: 0.6rem;
+ 	color:#77a466;
+ }
+
+/***** Top Section *****/
+
+.top-section .main-image {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.top-section .main-image img {
+	width: 100%;
+	border-top: 0.1875rem solid #77a466;
+	border-bottom: 0.1875rem solid #77a466;
+}
+
+.top-section .main-title {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.main-title h3 {
+	text-align: left;
+	padding: 0.3125rem;
+	text-transform: uppercase;
+	color: #77a466;
+}
+h3 {
+	font-size: 1.125rem;
+	text-align: center;
+	padding: 0.9375rem;
+}
+
+.main-title p {
+	padding: 0.3125rem;
+	line-height: 1.5625rem;
+	font-size: 1rem;
+}
+
+/***** Bottom Section *****/
+.bottom-section .section-one,.section-two, .section-three{
+	text-align: center;
+	padding: 0.625rem;
+}
+
+.section-one .menu {
+	list-style: none;
+}
+
+.menu li{
+	color:#77a466;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	border-top: 0.1875rem solid #eee;
+}
+
+/***** footer *****/
+footer {
+	width: 100%;
+	height: 3.125rem;
+	border-top: 0.1875rem solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Pinyon Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875rem;
+}
+
+
+
+
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width:768px) {
+	body{
+		max-width: 769px;
+	}
+}
+
+
+
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width:1200px) {
+	body{
+		width:auto;
+		max-width: 1201px;
+		margin: 0 auto;
+		}
+
+		/***** header *****/
+
+		header h1, span{
+			text-transform:uppercase;
+			text-align: left;
+			padding: 0.9rem;
+			border-bottom: none;
+			width:auto;
+			float: left;
+		}
+		 header span{
+			 color: #77a466;
+			 padding-top: 0;
+		 }
+
+		 header nav {
+		 	float: right;
+		 	padding: 45px 0px;
+		 }
+
+		 header nav a {
+			display: inline;
+			text-align: center;
+		 	text-decoration: none;
+		 	text-transform: uppercase;
+		 	font-weight: bold;
+		 	font-size: 0.875rem;
+		 	padding: 0.6rem;
+		 	color:#77a466;
+		 }
+
+		 /***** bottom-section *****/
+
+
+		 .section-one,
+		 .section-two,
+		 .section-three {
+		 	width: 31%;
+		 	height: auto;
+		 	float: left;
+		 	border-top: 0.0625rem solid #eee;
+		 }
+
+		 .section-one,
+		 .section-two {
+		 	border-right: 0.0625rem solid #eee;
+		 }
+
+		 .section-one h4 {
+		 	padding: 0.625rem 0;
+		 }
+
+		 .section-two h4,
+		 .section-three h4 {
+		 	padding: 0.625rem;
+		 }
+
+		 .menu {
+		 	list-style: none;
+		 	padding: 0;
+		 }
+
+		 .menu li {
+		 	padding: 0.625rem 0;
+		 }
+
+		 .bottom-section .section-one,
+		 .section-two,
+		 .section-three {
+			 text-align: left;
+		 }
+
+    /***** footer *****/
+
+		footer {
+			width: 100%;
+			height: 50%;
+		}
+
+	footer h4, span {
+		text-align: center;
+		float: none;
+	}
+
+
+
+
+
+} /* <<<<< closing media query monitor */
